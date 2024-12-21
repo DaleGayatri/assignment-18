@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            z-index: 10px;
+            }
+        .product-card{
+            width: 400px;
+            height: 450px;
+            border: 2px solid #b35900;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            border-radius: 10px;
+            margin: 10px 20px;
+        }
+        .product-image{
+            width: 300px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px 10px 0 0;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-tile{
+            text-align:center;
+        }
+
+        .product-description{
+            text-align: justify;
+            padding: 0 10px;
+        }
+
+        .product-btn{
+            display: block;
+            margin: 0 auto;
+            font-size: 25px;
+            padding: 5px 20px;
+            border-radius: 50px;
+            border: none;
+            background-color: #ff8000;
+        }
+        .Navbar{
+            background-color:black;
+            color:white;
+            padding: 10px;
+            text-align: left;
+            width: 1500px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+
+        .brand{
+            display: flex;
+            align-items: center;
+        }
+        
+        .brand-logo{
+            height: 50px;
+        }
+        .menu{
+            margin-left:630px ;
+        }
+        .search{
+            margin-left: 300px;
+        }
+        .menu-item{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 5px;
+        }
+        .menu-item:hover{
+            text-decoration: underline;
+
+        }
+        .search-box{
+            padding: 5px 10px;
+            border-radius: 30px;
+            border: none;
+        }
+        .menu-icon{
+            height: 50px;
+            display: none;
+        }
+
+        /* Mobile */
+        @media (max-width:600px) {
+            .product-tile{
+                text-align: left;
+                padding-left: 20px;
+                font-size: 22px;
+                margin: 5px 0;
+            }
+            .product-card{
+                width: 400px;
+                height: 400px;
+            }
+            .product-btn{
+                font-size: 20px;
+                padding: 5px 30px;
+            }
+            .product-description{
+                padding: 0 20px;
+                font-size: 16px;
+            }
+
+        }
+
+    /* Table */
+    @media (min-width:601px)  and (max-width:800px) {
+        
+        .product-card{
+            width: 300px;
+            height: 410px;
+        }
+        .product-tile{
+            font-size: 24px;
+        }
+        .product-description{
+            font-size: 16px;
+        }
+        .product-btn{
+            font-size: 20px;
+            padding: 5px 30px;
+        }
+    }
+        
+
+
+/* Laptop */
+@media (min-width:801px)  and (max-width:1024px) {
+
+}
+</style>
+</head>
+<body>
+    <div class="Navbar">
+        <div class="brand">
+            <img src="C:\Users\admin\Desktop\assignment-18\humming-bird.png"  class="brand-logo" alt="bird logo">
+            <h2>Indian Birds</h2>
+        </div>
+        <div class="menu">
+            <a href="#" class="menu-item">Home</a>
+            <a href="#" class="menu-item">About</a>
+            <a href="#" class="menu-item">Contact</a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="search" class="search-box"/>
+        </div>
+        <img src="C:\Users\admin\Desktop\assignment-18\hambuger.png" class="menu-icon" alt="menu-icon">
+    </div>
+    <h1>
+        Indian Birds</h1>
+    <div class="container">
+        <div class="product-card">
+            <img src="C:\Users\admin\Desktop\assignment-17\parot.jpg" class="product-image" alt="parot">
+            <h1 class="product-tile">Parot</h1>
+            <p class="product-description">
+                Parrots, also known as psittacines, are birds with a strong curved beak, upright stance,and clawed feet.
+                They are classified in four families that contain roughly 410 species in 101 genera,
+                found mostly in tropical and subtropical
+            </p>
+
+            <button class="product-btn"> Know More</button>
+        </div>
+       
+        <div class="product-card">
+            <img src="C:\Users\admin\Desktop\assignment-17\parot.jpg" class="product-image" alt="parot">
+            <h1 class="product-tile">Parot</h1>
+            <p class="product-description">
+                Parrots, also known as psittacines, are birds with a strong curved beak, upright stance,and clawed feet.
+                They are classified in four families that contain roughly 410 species in 101 genera,
+                found mostly in tropical and subtropical
+            </p>
+
+            <button class="product-btn"> Know More</button>
+        </div>
+        
+            <div class="product-card">
+                <img src="C:\Users\admin\Desktop\assignment-17\parot.jpg" class="product-image" alt="parot">
+                <h1 class="product-tile">Parot</h1>
+                <p class="product-description">
+                    Parrots, also known as psittacines, are birds with a strong curved beak, upright stance,and clawed feet.
+                    They are classified in four families that contain roughly 410 species in 101 genera,
+                    found mostly in tropical and subtropical
+                </p>
+    
+                <button class="product-btn"> Know More</button>
+            </div>
+        </div>    
+            <div class="container">
+                <div class="product-card">
+                    <img src="C:\Users\admin\Desktop\assignment-17\parot.jpg" class="product-image" alt="parot">
+                    <h1 class="product-tile">Parot</h1>
+                    <p class="product-description">
+                        Parrots, also known as psittacines, are birds with a strong curved beak, upright stance,and clawed feet.
+                        They are classified in four families that contain roughly 410 species in 101 genera,
+                        found mostly in tropical and subtropical
+                    </p>
+        
+                    <button class="product-btn"> Know More</button>
+                </div> 
+                 <div class="product-card">
+                    <img src="C:\Users\admin\Desktop\assignment-17\parot.jpg" class="product-image" alt="parot">
+                    <h1 class="product-tile">Parot</h1>
+                    <p class="product-description">
+                        Parrots, also known as psittacines, are birds with a strong curved beak, upright stance,and clawed feet.
+                        They are classified in four families that contain roughly 410 species in 101 genera,
+                        found mostly in tropical and subtropical
+                    </p>
+        
+                    <button class="product-btn"> Know More</button>
+                </div>  
+                <div class="product-card">
+                    <img src="C:\Users\admin\Desktop\assignment-17\parot.jpg" class="product-image" alt="parot">
+                    <h1 class="product-tile">Parot</h1>
+                    <p class="product-description">
+                        Parrots, also known as psittacines, are birds with a strong curved beak, upright stance,and clawed feet.
+                        They are classified in four families that contain roughly 410 species in 101 genera,
+                        found mostly in tropical and subtropical
+                    </p>
+        
+                    <button class="product-btn"> Know More</button>
+                </div>
+                
+            </body>
+</html>
