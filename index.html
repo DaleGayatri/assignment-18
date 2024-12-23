@@ -55,12 +55,11 @@
             background-color:black;
             color:white;
             padding: 10px;
-            text-align: left;
-            width: 1500px;
-            position: sticky;
-            top: 0;
+            text-align:left;
+            width:98%;
             z-index: 100;
             display: flex;
+            justify-content: space-between;
             align-items: center;
         }
 
@@ -73,39 +72,35 @@
             height: 50px;
         }
         .menu{
-            margin-left:630px ;
+            margin-left:700px ;
         }
-        .search{
-            margin-left: 300px;
-        }
+        
         .menu-item{
             color: white;
             text-decoration:none;
-            font-size: 15px;
-            margin: 0 5px;
+            font-size: 20px;
+            margin: 0 20px;
+        
+        
            
         }
         .menu-item:hover{
             text-decoration: underline;
 
         }
-        .search-box{
-            padding: 5px 5px;
-            border-radius: 20px;
-            border: none;
-        }
+        
         .menu-icon{
-            height: 40px;
-            display: flex;
+            height: 50px;
+            display:none;
         }
 
         /* Mobile */
         @media (max-width:600px) {
             .product-tile{
                 text-align: left;
-                padding-left: 20px;
-                font-size: 22px;
-                margin: 5px 0;
+                padding-left: 10px;
+                font-size: 20px;
+                margin: 2px 0;
             }
             .product-card{
                 width: 400px;
@@ -116,11 +111,31 @@
                 padding: 5px 30px;
             }
             .product-description{
-                padding: 0 20px;
-                font-size: 16px;
+                font-size: 20px;
             }
-
+            .menu{
+            margin-left: 10px;
         }
+        .menu{
+            display: none;
+        }
+        
+       .Navbar{
+            background-color:black;
+            color:white;
+            padding: 10px;
+            width: 460px;
+            z-index: 100;
+            display: flex;
+            align-items:center;
+        }
+        .menu-icon{
+            display:flex;
+        
+       }
+       
+        
+    }
 
     /* Table */
     @media (min-width:601px)  and (max-width:800px) {
@@ -130,21 +145,45 @@
             height: 410px;
         }
         .product-tile{
-            font-size: 24px;
+            font-size: 20px;
         }
         .product-description{
             font-size: 16px;
         }
         .product-btn{
             font-size: 20px;
-            padding: 5px 30px;
+            padding: 3px 10px;
         }
-    }
         
-
-
+        }
+        .menu{
+            margin-left: 300px;
+        }
+        
+           
 /* Laptop */
-@media (min-width:801px)  and (max-width:1024px) {
+@media (min-width:801px) and (max-width:1024px) {
+    .menu-icon{
+            display:block;
+            margin-left:5px;
+       }
+
+  .menu{
+    margin-left: 400px;
+  }
+
+  .Navbar{
+            background-color:black;
+            color:white;
+            padding: 10px;
+            text-align: left;
+            width: 600px;
+            z-index: 100;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+        }
+  
 
 }
 </style>
@@ -152,18 +191,17 @@
 <body>
     <div class="Navbar">
         <div class="brand">
-            <img src="./../img/humming-bird.png"class="brand-logo" alt="bird logo">
-            <h2>Indian Birds</h2>
+            <img src="./img/../img/humming-bird.png"class="brand-logo" alt="bird logo">
+            <h3>Indian Birds</h3>
         </div>
         <div class="menu">
             <a href="#" class="menu-item">Home</a>
             <a href="#" class="menu-item">About</a>
             <a href="#" class="menu-item">Contact</a>
         </div>
-        <div class="search">
-            <input type="text" placeholder="search" class="search-box"/>
-        </div>
         <img src="hambuger.png" class="menu-icon" alt="menu-icon">
+       </div>
+       
     </div>
     <h1>
         Indian Birds</h1>
