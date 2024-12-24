@@ -52,7 +52,7 @@
             background-color: #ff8000;
         }
         .Navbar{
-            background-color:black;
+            background-color:#b35900;
             color:white;
             padding: 10px;
             text-align:left;
@@ -98,9 +98,9 @@
         @media (max-width:600px) {
             .product-tile{
                 text-align: left;
-                padding-left: 10px;
-                font-size: 20px;
-                margin: 2px 0;
+                padding-left: 20px;
+                font-size: 22px;
+                margin: 5px 0;
             }
             .product-card{
                 width: 400px;
@@ -112,79 +112,49 @@
             }
             .product-description{
                 font-size: 20px;
+                font-size: 16px;
             }
             .menu{
-            margin-left: 10px;
-        }
-        .menu{
-            display: none;
-        }
-        
-       .Navbar{
-            background-color:black;
-            color:white;
-            padding: 10px;
-            width: 460px;
-            z-index: 100;
-            display: flex;
-            align-items:center;
+            display:none;
         }
         .menu-icon{
-            display:flex;
-        
-       }
-       
-        
+             display:block;
+            margin-left: auto;
+            margin-right: 50px;
+        }
     }
-
     /* Table */
-    @media (min-width:601px)  and (max-width:800px) {
+    @media (min-width:601px) and (max-width:800px) {
         
         .product-card{
             width: 300px;
             height: 410px;
         }
         .product-tile{
-            font-size: 20px;
+            font-size: 24px;
         }
         .product-description{
             font-size: 16px;
         }
         .product-btn{
             font-size: 20px;
-            padding: 3px 10px;
-        }
-        
+            padding: 5px 30px;
         }
         .menu{
-            margin-left: 300px;
+            margin-left: 200px;
         }
-        
-           
-/* Laptop */
-@media (min-width:801px) and (max-width:1024px) {
-    .menu-icon{
-            display:block;
-            margin-left:5px;
-       }
-
-  .menu{
+        .Navbar{
+            background-color: tomato;
+        }
+        .menu{
+            display: flex;
+        }
+    }
+    /* Laptop */
+@media (min-width:801px) and (max-width:1200px) {
+   .menu{
     margin-left: 400px;
   }
-
-  .Navbar{
-            background-color:black;
-            color:white;
-            padding: 10px;
-            text-align: left;
-            width: 600px;
-            z-index: 100;
-            justify-content: space-between;
-            display: flex;
-            align-items: center;
-        }
-  
-
 }
 </style>
 </head>
@@ -199,7 +169,7 @@
             <a href="#" class="menu-item">About</a>
             <a href="#" class="menu-item">Contact</a>
         </div>
-        <img src="hambuger.png" class="menu-icon" alt="menu-icon">
+        <img src="./img/../img/img/hambuger (1).png" class="menu-icon" alt="menu-icon">
        </div>
        
     </div>
